@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_c3AF0MjYEeSyMNYR5xypkQ" elementId="org.eclipse.e4.application" bindingContexts="_c3AF2cjYEeSyMNYR5xypkQ">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_c3AF0cjYEeSyMNYR5xypkQ" elementId="org.eclipse.e4.window.main" label="Dank You" iconURI="platform:/plugin/ssr.intern.project/icons/gabenIcon.jpg" x="0" y="0" width="1920" height="1080">
+    <children xsi:type="basic:Part" xmi:id="_YIbPAIcVEeeH1s3s5aataA" elementId="ssr.intern.project.part.alma" toBeRendered="false" contributionURI="bundleclass://ssr.intern.project/ssr.intern.project.SamplePart" label="Alma"/>
+    <snippets xsi:type="advanced:Perspective" xmi:id="_I4Cw8IfgEee58JC0_xf0SA" elementId="ssr.intern.project.perspective.0"/>
+    <mainMenu xmi:id="_4Wd2oH27Eeet-Ztu0nSgFA" elementId="menu:org.eclipse.ui.main.menu">
+      <children xsi:type="menu:Menu" xmi:id="_Ar1mIH28Eeet-Ztu0nSgFA" elementId="ssr.intern.project.menu.file" label="File">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_Qf8_IH28Eeet-Ztu0nSgFA" elementId="ssr.intern.project.handledmenuitem.exit" label="Exit" iconURI="platform:/plugin/ssr.intern.project/icons/exit.png" command="_J0Xi0H26Eeet-Ztu0nSgFA"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_ZCqnEH28Eeet-Ztu0nSgFA" elementId="ssr.intern.project.handledmenuitem.open" label="Open" iconURI="platform:/plugin/ssr.intern.project/icons/find.png" command="_ZPAE0H26Eeet-Ztu0nSgFA"/>
+        <children xsi:type="menu:DirectMenuItem" xmi:id="_c4ztQI5GEeePaaeyGh3a_w" elementId="ssr.intern.project.directmenuitem.treshold" label="Settings" iconURI="platform:/plugin/ssr.intern.project/icons/settings.png" contributionURI="bundleclass://ssr.intern.project/ssr.intern.project.TresholdHandler"/>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_MrlVoH28Eeet-Ztu0nSgFA" elementId="ssr.intern.project.menu.help" label="About">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_8XxTcH28Eeet-Ztu0nSgFA" elementId="ssr.intern.project.handledmenuitem.about" label="About" iconURI="platform:/plugin/ssr.intern.project/icons/about.png" command="_mKPzQH26Eeet-Ztu0nSgFA"/>
+      </children>
+    </mainMenu>
+  </children>
+  <handlers xmi:id="_cZM6gH27Eeet-Ztu0nSgFA" elementId="handler.quitCommand" contributionURI="bundleclass://ssr.intern.project/ssr.intern.project.QuitHandler" command="_J0Xi0H26Eeet-Ztu0nSgFA"/>
+  <handlers xmi:id="_i7XnAH27Eeet-Ztu0nSgFA" elementId="handler.openCommand" contributionURI="bundleclass://ssr.intern.project/ssr.intern.project.OpenHandler" command="_ZPAE0H26Eeet-Ztu0nSgFA"/>
+  <handlers xmi:id="_ovJjgH27Eeet-Ztu0nSgFA" elementId="handler.saveCommand" contributionURI="bundleclass://ssr.intern.project/ssr.intern.project.SaveHandler" command="_glpiQH26Eeet-Ztu0nSgFA"/>
+  <handlers xmi:id="_uT0F8H27Eeet-Ztu0nSgFA" elementId="handler.aboutCommand" contributionURI="bundleclass://ssr.intern.project/ssr.intern.project.AboutHandler" command="_mKPzQH26Eeet-Ztu0nSgFA"/>
+  <handlers xmi:id="_tW9-QI5FEeePaaeyGh3a_w" elementId="ssr.intern.project.handler.tresholdHandler" contributionURI="bundleclass://ssr.intern.project/ssr.intern.project.TresholdHandler"/>
+  <rootContext xmi:id="_c3AF2cjYEeSyMNYR5xypkQ" elementId="org.eclipse.ui.contexts.dialogAndWindow" name="In Dialog and Windows">
+    <children xmi:id="_c3AF2sjYEeSyMNYR5xypkQ" elementId="org.eclipse.ui.contexts.window" name="In Windows"/>
+    <children xmi:id="_c3AF28jYEeSyMNYR5xypkQ" elementId="org.eclipse.ui.contexts.dialog" name="In Dialogs"/>
+  </rootContext>
+  <commands xmi:id="_J0Xi0H26Eeet-Ztu0nSgFA" elementId="org.eclipse.ui.file.exit" commandName="quitCommand" description="Exits the window , I guess">
+    <parameters xmi:id="_TodwgIDjEeeD-sd1n37NQg" elementId="ssr.intern.project.commandparameter.0" name="Command Parameter 0"/>
+  </commands>
+  <commands xmi:id="_ZPAE0H26Eeet-Ztu0nSgFA" elementId="org.eclipse.ui.file.open" commandName="openCommand" description="open some ecxel tables"/>
+  <commands xmi:id="_glpiQH26Eeet-Ztu0nSgFA" elementId="org.eclipse.ui.file.save" commandName="saveCommand" description="Save something?"/>
+  <commands xmi:id="_mKPzQH26Eeet-Ztu0nSgFA" elementId="org.eclipse.ui.help.aboutAction" commandName="aboutCommand" description="this one tells you some usefull shit ... perhaps"/>
+  <addons xmi:id="_c3AF0sjYEeSyMNYR5xypkQ" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
+  <addons xmi:id="_c3AF08jYEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
+  <addons xmi:id="_c3AF1MjYEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
+  <addons xmi:id="_c3AF1cjYEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.workbench.commands.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon"/>
+  <addons xmi:id="_c3AF1sjYEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.workbench.handler.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
+  <addons xmi:id="_c3AF18jYEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
+  <addons xmi:id="_c3AF2MjYEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
+</application:Application>
